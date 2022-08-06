@@ -1,0 +1,38 @@
+{ "data" :
+    [{
+        "txnid": "01x",
+        "date": "2022-07-01 18:38:09",
+				"amount": "190.00",
+        "upiOfRecipient": "ididi@odkidi",
+        "category": "grocery",
+				"mode": "upi",
+				"crdb": "debited"
+				
+    },
+    {
+        "txnid": "4y8h",
+        "date": "2022-07-13 14:06:20",
+				"amount": "1392.00",
+        "upiOfRecipient": "094532xxpaytmi@odkidi",
+        "category": "entertainment",
+				"mode": "creditedcard",
+				"crdb": "debited"
+    },
+    {
+        "txnid": "o0x3i",
+        "date": "2022-07-19 11:45:05",
+				"amount": "300.00",
+        "upiOfRecipient": "094532xxpaytmi@odkidi",
+        "category": "transport",
+				"mode": "upi",
+				"crdb": "debited"
+    },{
+        "txnid": "pc5d",
+        "date": "2022-07-04 19:12:40",
+				"amount": "896.01",
+        "upiOfRecipient": "094532xxpaytmi@odkidi",
+        "category": "food",
+				"mode": "upi",
+				"crdb": "debited"
+    }]
+}
