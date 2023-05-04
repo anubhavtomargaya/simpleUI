@@ -1,0 +1,19 @@
+{
+  "tasks": [
+    {"id":1,
+    "name":"Food with bois",
+    "Amount":"400",
+    "category":"Food",
+    "reminder":true
+},
+{
+    "id":2,
+    "name":"Groceries",
+    "Amount":"1000",
+    "category":"Household",
+    "reminder":true
+
+}
+    
+  ]
+}
