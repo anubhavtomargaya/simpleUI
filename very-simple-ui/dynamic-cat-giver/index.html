@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        button {
+            text-align: center;
+            padding: 10px;
+            font-size: 12px;
+            width: 100%;
+            margin: 0px auto;
+            height: 40px;
+            background-color: rgb(174, 139, 209);
+            font-family: monospace;
+            border-radius: 30px;
+
+        }
+        #title-bar {
+            color:peachpuff;
+            font-size: 20px;
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            background-color: rgb(216, 112, 112);
+            text-align: center;
+        }
+        .navbar {
+            background-color: indianred;
+            width: 100%;
+            
+
+        }
+        nav {
+            
+            /* float: left; */
+            width: 100%;
+            text-align: center;
+        }
+
+
+        .navitem {
+            text-align: center;
+
+            padding: 10px;
+            margin: auto;
+            display: inline-block;
+            
+        }
+        .navitem > a {
+            text-decoration: none;
+            color: ivory;
+        }
+        .main {
+            padding: 12px;
+            margin: 10px 20px;
+            background-color: rgb(245, 245, 245);
+        }
+        
+        .sidebar {
+            float: left;
+            overflow: auto;
+            padding: 15px;
+            width: 25%;
+            background-color: lavender;
+            margin-right: 10px;
+            margin: auto
+            
+
+        }
+        .sideitem{
+            display: inline-block;
+            width: 100%;
+            /* padding: 14px; */
+            margin-right: 20px;
+            margin-block-end: 8px;
+            text-align: center;
+            /* background-color: rgb(186, 142, 192); */
+        }
+       
+        .clearfix::after {
+        content:"";
+         clear: both;
+         display: table;
+        }
+
+        .content {
+            float: right;
+            width: 73%;
+            padding: 15px 20px;
+            background-color: lavender;
+            max-height: 350px;
+            overflow: auto;
+            
+        }
+
+        #quote{
+            font-size: 15px;
+            margin: 5px auto;
+            text-align: center;
+            display: block;
+            text-transform: capitalize;
+            font-family:cursive;
+        }
+
+
+        #catext{
+            font-size: 15px;
+            margin: 20px auto;
+            display: block;
+            text-transform: capitalize;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .showcase {
+            width: 60%;
+            height: 40%;
+            margin: 20px 30px 10px 30px;
+        }
+        #catpic {
+            text-align: center;
+        }
+
+    </style>
+    <link rel="stylesheet" href="mystyle.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS App</title>
+</head>
+
+<!-- Body  -->
+
+<body style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+    <header id="head">
+        <div id="title-bar" > 
+            <h1> THE CAT GIVER</h1>        
+        </div>
+    </header>
+
+    <nav>
+        <div class="navbar">
+            <div class="navitem">
+                <a href="#" >Home</a>
+            </div>
+            <div class="navitem">
+                <a href="#" >About</a>
+            </div>
+            <div class="navitem">
+                <a href="#" >Contact</a>
+            </div>
+        </div>
+    </nav>
+<!-- <div >
+   
+   <div class="mybox">
+       <p>Box1</p>
+   </div>
+   <div class="mybox">
+    <p>Box2</p>
+    </div>
+    <div class="mybox">
+    <p>Box3</p>
+    </div>
+</div> -->
+
+    <!-- sidebar, -->
+<div class="main clearfix">
+
+    
+    <div class="sidebar "> 
+
+        <div class="sideitem">
+            <button id="cat">
+                Give a cat
+            </button>
+        </div>
+        <div class="sideitem">
+            <button id="color">
+                Put Color
+            </button>
+        </div>
+        <div class="sideitem">
+            <button id="minus">
+                Take a Cat
+            </button>
+        </div>
+    </div>  
+
+    <div class="content">
+        <h1> Dynamic Cat Receiver</h1>
+        <div id="catext">
+            
+        </div>
+        <small> 
+            Lorem ipsum dolor sit amet e?
+        </small>
+        
+    </div>
+</div>   
+
+<button id="showcat">
+   Show a Cat
+</button><br>
+
+
+<div id="catpic">
+</div> 
+<div id="quote">
+    A random cat is waiting
+</div>  
+    <script src="index.js">
+    </script>
+</body>
+</html>
