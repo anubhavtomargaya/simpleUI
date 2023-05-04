@@ -1,0 +1,17 @@
+
+.mybox {
+    float: left;
+    padding: 20px;
+    width: 33.3%;
+    background-color: bisque;
+    text-align: center;
+    box-sizing: border-box; 
+    margin-top: 5px;
+    margin-bottom: 4px;
+    
+} 
+
+.clear {
+    clear: left;
+    margin-top: 5px;
+}

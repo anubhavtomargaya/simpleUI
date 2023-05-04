@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Side Navigation</title>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+   <nav class="clearfix"> 
+    <div class="burger">
+        <div class="one"></div>
+        <div></div>
+        <div class="three"></div>
+    </div>
+       <div class="logo" style="float: left;">
+           ToMars
+       </div>
+       
+       <ul class="nav-links" style="float: right; list-style: none;;">
+           <li  class="tab is-active"><a href="#" data-switcher data-tab="1"> Home </a></li>
+           <li class="tab"><a href="#"data-switcher data-tab="2"> Work </a></li>
+           <li class="tab"><a href="#"data-switcher data-tab="3"> Projects </a></li>
+           <li class="tab"><a href="#"data-switcher data-tab="4"> Contact </a></li>
+           <li class="tab"><a href="#"data-switcher data-tab="5"> Review </a></li>
+       </ul>
+       
+   </nav>
+
+
+   <!-- <div class="test"></div> -->
+   <!-- <div class="back-img"> -->
+
+    <section class="pages">
+
+        <!-- Dynamic single pages  -->
+
+        <div class="page" data-page="1">
+            <h1 class="clk">One Content</h1>
+        <p>And one description</p>
+        </div> 
+        <div class="page" data-page="2">
+            <h1>two Content</h1>
+        <p>And some description</p>
+       </div>
+        <div class="page" data-page="3">
+            <h1>three Content</h1>
+        <p>And some description</p>
+        </div>
+        <div class="page" data-page="4">
+            <h1>four Content</h1>
+        <p>And some description</p>
+        </div>
+        <div class="page" data-page="5">
+            <h1>five Content</h1>
+        <p>And some description</p>
+        </div>
+   <!-- ----cards -----    -->
+        
+        <!-- <div class="card" id="card1" data-card="1">
+            <h2>Polo Car</h2>
+        </div> -->
+
+    </section>
+  
+    <!-- Add expenses -->
+
+    <section  class="expenses" >
+        <div class="add-div">
+            <button class="add-btn">
+                Add Expenses
+            </button>
+        </div>
+        
+    </section>
+
+
+   <!-- </div> -->
+   <div class="overlay"></div>
+    
+
+
+
+
+
+
+
+
+
+   <script src="/app.js">
+       
+   </script>
+</body>
+</html>

@@ -1,7 +1,9 @@
 import './App.css';
 import Form from './components/form'
 import Button from './components/button'
-// import axios from 'axios'
+import ExpenseList from './API/ExpenseList'
+
+
 
 function App() {
   return (
@@ -16,13 +18,16 @@ function App() {
         <div>
           Dashboard 
         </div>
+        <div>
+          Pockets
+        </div>
       </div>
       <div className="box3">
         <div>
-          Refresh Data
+          <Button name="Refresh Data" />
         </div>   
         <div>
-          Add New Data
+        <Button name="Add new data" />
         </div>   
         <div className='postform'>
           <Form />
@@ -34,7 +39,9 @@ function App() {
       <div className="box5">
         
         <div>
-        latest data
+
+        <ExpenseList title="Recent Transactions"/>
+
         </div>  
       </div>
       <div className="box6">Misc</div>

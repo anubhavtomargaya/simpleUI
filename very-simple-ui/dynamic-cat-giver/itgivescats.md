@@ -1,0 +1,1 @@
+Gives cats in various ways and forms. CSS/JS exercises focuses on generating child elements and calling API.

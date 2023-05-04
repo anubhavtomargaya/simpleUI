@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuel Log App</title>
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+.header{
+    background-color: salmon;
+    /* display: block; */
+    /* height: 25vw; */
+    padding: 30px;
+    /* overflow: auto; */
+    width: 100%;
+    margin: 0px;
+    text-align: center;
+
+}
+.header h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: blanchedalmond;
+    /* padding: 1vw; */
+    /* text-align: center; */
+    font-size:10vw;
+
+    margin-bottom: -10px;
+    
+}
+.header p {
+    font-family: 'Times New Roman', Times, serif;
+    color: brown;
+    font-size: 2.5vw;
+
+    z-index: 1;
+}
+.nav{
+    background-color: slategray;
+    overflow: hidden;
+    /* padding: 0; */
+    margin: 0px auto 20px auto;
+    
+
+}
+ul {
+    text-decoration: none;
+    list-style: none;
+
+
+    padding: 0px 0px 0px 0px;
+    margin: 0px ;
+}
+.sect {
+    display: none;
+}
+
+
+/* .nav li {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: powderblue;
+    margin: 0 0px;
+    border:1px solid hotpink
+    
+} */
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.nav a {
+    float: left;
+    display: block;
+    padding: 10px;
+    background-color: brown;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    width: 33.3%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.nav a:hover {
+  background-color: #ddd;
+  color: black;
+
+
+  }
+
+.main{
+
+    margin: 0px auto;
+    width: 95%;
+
+
+}
+.sidebar{
+    width: 24%;
+    float: left;
+    margin-right: 20px;
+    padding: 0px;
+    
+    
+
+}
+.dropdown_content{
+    background-color: aqua;
+    z-index: 0;
+    
+    display: none;
+    position: absolute;
+    height: 20%;
+    width: 40%;
+}
+.dropdown{
+    display: block;
+    margin: 0px 30px 0px 0px;
+    width: 20%;
+    background-color: blue;
+    /* float: auto; */
+}
+.dropdown:hover .dropdown_content {
+    display: block;
+}
+.sidebar li {
+    display: block;
+    background-color: blanchedalmond;
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 25px;
+    padding: 8px 5px;
+}
+.sidebar li:hover {
+    display: block;
+    background-color: rgb(255, 211, 145);
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 25px;
+    padding: 8px 5px;
+    border-right: 3px solid gray;
+  }
+.content {
+    float: right;
+    width: 70%;
+    background-color: bisque;
+    padding: 18px;
+    overflow: hidden;
+    /* height: 148px; */
+}
+
+#default {
+    display: block;
+    background-color:antiquewhite ;
+}
+</style>
+</head>
+<body style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0;">
+    <div class="header">
+        <h1> FUEL</h1>
+        <p>Tracking the fuel you need to function</p>
+    </div>
+    <div class="nav">
+
+            <a href="#">
+                Sidebar
+            </a>
+             <a href="#">
+                Log
+            </a>
+             <a href="#">
+                Home
+            </a>
+        
+    </div>
+    <div class="dropdown">
+        Mouse over
+        <div class="dropdown_content">
+            sidebar
+        </div>
+    </div>
+
+    <div class="main clearfix">
+        <div class="sidebar">
+            <ul>
+                <li id="actbtn">
+                    Activa
+                </li>
+                <li>
+                    Polo
+                </li>
+                <li>
+                    Others
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <section id="default">
+                <h1> Total Usage </h1>
+            <p>Heres how much you are spending on petrol this month.</p>
+            <p>Heres how much you are spending on petrol this month.</p>
+            <p>Heres how much you are spending on petrol this month.</p>
+            <p>Heres how much you are spending on petrol this month.</p>
+            </section>
+            <section class="sect" id="activa">
+                <h1> Total Usage in activa</h1>
+            <p>Heres how much you are spending on petrol this month.</p>
+            <p>Heres how much you are spending on petrol this month.</p>
+            <p>Heres how much you are spending on petrol this month.</p>
+            <p>Heres how much you are spending on petrol this month.</p>
+            </section>
+            <section class="sect" id="Polo">
+                <h1> Total Usage in Polo</h1>
+            <p>Heres how much you are spending on petrol this month.</p>
+            <p>Heres how much you are spending on petrol this month.</p>
+            <p>Heres how much you are spending on petrol this month.</p>
+            <p>Heres how much you are spending on petrol this month.</p>
+            </section>
+            <section class="sect" id="Others">
+                <h1> Total Usage in Others</h1>
+            <p>Heres how much you are spending on petrol this month.</p>
+            <p>Heres how much you are spending on petrol this month.</p>
+            <p>Heres how much you are spending on petrol this month.</p>
+            <p>Heres how much you are spending on petrol this month.</p>
+            </section>
+            
+        </div>
+    </div>
+    <script src="script.js">
+
+    </script>
+</body>
+</html>
